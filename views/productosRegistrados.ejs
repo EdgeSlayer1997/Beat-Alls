@@ -60,7 +60,7 @@
                                     <td><%= producto.Precio_publico %></td>
                                     <td><%= producto.ID_Proveedor %></td>
                                     <td>
-                                        <a onclick="eliminar(<%= producto.ID_Producto %>)">Borrar</a>
+                                        <a onclick="eliminar (<%= producto.ID_Producto %>)">Borrar</a>
                                         <a href="/actualizacionProductos?id=<%= producto.ID_Producto %>&nombre_producto=<%= producto.Nombre_producto %>&descripcion=<%= producto.Descripcion %>&color=<%= producto.Color %>&talla=<%= producto.Talla %>&material=<%= producto.Material %>&marca=<%= producto.Marca %>&temporada=<%= producto.Temporada %>&existencias=<%= producto.Existencias %>&precio=<%= producto.Precio %>">Actualizar</a>
                                     </td>
                                 </tr>
