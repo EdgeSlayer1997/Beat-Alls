@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Responsive Bootstrap4 Shop Template, https://imransdesign.com/">
-	<link rel="shortcut icon" type="image/png" href="/assets/images/Imagen2.png">
+	<link rel="shortcut icon" type="image/png" href="/assets/images/LOGO5.png">
     <link rel="stylesheet" href="/assets/css/formulario.css">
     <title><%= titulo %></title> 
 </head>
@@ -66,7 +65,7 @@
                                                 <td rowspan="<%= pedidosMismoNumero.length %>">
                                                     Cantidad a pagar: <%= cantidadPagarPorPedido[numeroPedido] %><br>
                                                     <a href="/actualizacionPedido?id=<%= numeroPedido %>&ubicacion=<%= pedido.Ubicacion %>&Estatus=<%= pedido.Estatus %>">Actualizar</a><br><br>
-                                                    <button type="button" style="border-radius: 15px;"><a onclick="confirmar(<%= pedido.ID_Cliente %>)" style="text-decoration: none; color: black;">Cancelar pedido</a></button><br><br>
+                                                    <a onclick="confirmar(<%= pedido.ID_Cliente %>)" style="text-decoration: none; color: red;">Cancelar pedido</a><br><br>
                                                 </td>
                                             <% } %>
                                             <% if (index !== 0) { %>
