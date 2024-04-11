@@ -34,7 +34,7 @@ router.post('/passChange', paginas.passChange);
 
 router.get('/visualizarCarrito', carrito.visualizarCarrito);
 
-router.post('/agregarAlCarrito', authorizationMiddleware, carrito.agregarAlCarrito);
+router.post('/agregarAlCarrito', carrito.agregarAlCarrito);
 
 router.get('/eliminarProductoCarrito/:id', carrito.eliminarProductoCarrito);
 
