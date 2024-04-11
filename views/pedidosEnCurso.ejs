@@ -103,30 +103,7 @@
             if (result.isConfirmed) {
                 // Se envía una solicitud al servidor para cancelar el pedido
                 fetch('/cancelarPedidoUser/' + id, {
-                    method: 'POST' // Método HTTP utilizado para la solicitud
                 })
-                .then(response => {
-                    if (response.ok) {
-                        // Si la solicitud fue exitosa, recargamos la página para reflejar los cambios
-                        location.reload();
-                    } else {
-                        // Si hubo un error en la solicitud, muestra un mensaje de error
-                        Swal.fire({
-                            title: 'Error',
-                            text: 'Hubo un error al cancelar el pedido. Por favor, inténtalo de nuevo.',
-                            icon: 'error'
-                        });
-                    }
-                })
-                .catch(error => {
-                    console.error('Error al cancelar el pedido:', error);
-                    // Si hubo un error en la solicitud, muestra un mensaje de error
-                    Swal.fire({
-                        title: 'Error',
-                        text: 'Hubo un error al cancelar el pedido. Por favor, inténtalo de nuevo.',
-                        icon: 'error'
-                    });
-                });
             }
         });
     }
