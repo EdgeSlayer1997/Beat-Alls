@@ -17,7 +17,7 @@ router.get("/", paginas.index);
 
 router.get("/productos", paginas.productos);
 
-router.get("/panelNavegacion", authorizationMiddleware, paginas.panelNavegacion);
+router.get("/panelNavegacion", paginas.panelNavegacion);
 
 /* Login */
 router.get("/login", paginas.Login); // Obtener el formulario de Login.
@@ -32,7 +32,7 @@ router.post('/passChange', paginas.passChange);
 
 /*Aquí inicia el carrito*/
 
-router.get('/visualizarCarrito', authorizationMiddleware, carrito.visualizarCarrito);
+router.get('/visualizarCarrito', carrito.visualizarCarrito);
 
 router.post('/agregarAlCarrito', authorizationMiddleware, carrito.agregarAlCarrito);
 
