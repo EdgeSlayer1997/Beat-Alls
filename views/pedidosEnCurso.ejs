@@ -84,8 +84,10 @@
     </div>
 </div>
 </body>
+<footer>
+    <%- include('./layout/footer.ejs'); -%>
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.all.min.js"></script>
-
 <script>
     function confirmar(id) {
         Swal.fire({
@@ -129,9 +131,4 @@
         });
     }
 </script>
-
-
-<footer>
-    <%- include('./layout/footer.ejs'); -%>
-</footer>
 </html>
