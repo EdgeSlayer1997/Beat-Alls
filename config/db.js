@@ -1,7 +1,7 @@
 const { Sequelize } = require('sequelize');
 
-const db = new Sequelize('beat_alls', 'root', '', {
-  host: 'localhost',
+const db = new Sequelize('be0ltom5pngxh5y4nlbr', 'uvjal91293olcsx9', 'vPF8NwNxcYy6m03wiZOM', {
+  host: 'http://be0ltom5pngxh5y4nlbr-mysql.services.clever-cloud.com/',
   dialect: 'mysql',
   port: 3306
 });
