@@ -89,7 +89,7 @@
             cancelButtonText: "Cancelar"
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch('/productosRegistrados/' + id, {
+                window.location= '/productosRegistrados/'+ id, {
            		 Swal.fire({
                             title: "Eliminado!",
                             text: "El producto ha sido eliminado",
